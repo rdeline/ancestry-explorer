@@ -1,0 +1,49 @@
+{
+  "name": "ancestry-explorer",
+  "version": "0.0.0",
+  "description": "ancestry-explorer",
+  "scripts": {
+    "clean": "rimraf dist",
+    "start": "webpack-dev-server --open",
+    "watch": "webpack --watch",
+    "format": "prettier --write \"{__tests__,src}/**/*.{js,ts,scss,html}\"",
+    "prebuild": "npm run format",
+    "build": "npm run clean && webpack --config ./webpack.config.js"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jasmine": "^2.8.11",
+    "@types/react": "^16.7.18",
+    "@types/react-dom": "^16.0.11",
+    "copy-webpack-plugin": "^4.5.4",
+    "css-loader": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jasmine": "^3.3.0",
+    "mini-css-extract-plugin": "^0.4.4",
+    "node-sass": "^4.9.4",
+    "prettier": "^1.15.2",
+    "react": "^16.7.0",
+    "sass-loader": "^7.1.0",
+    "ts-loader": "^5.2.2",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "tslint-loader": "^3.5.4",
+    "typescript": "^3.1.3",
+    "webpack": "^4.25.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "mobx": "^5.8.0",
+    "parse-gedcom": "^1.0.3",
+    "react-dom": "^16.7.0"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  }
+}
